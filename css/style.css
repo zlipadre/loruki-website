@@ -114,6 +114,18 @@ img {
     outline:none;
 }
 
+.showcase::before,.showcase::after {
+    content: '';
+    position:absolute;
+    height: 100px;
+    bottom:-70px;
+    right:0;
+    left:0;
+    background:#fff;
+    -webkit-transform: skewY(-3deg);
+    transform:skewY(-1,5deg)
+}
+
 .btn {
     display:inline-block;
     padding: 10px 30px;
@@ -131,6 +143,15 @@ img {
 .btn:hover {
     transform: scale(0.975)
 }
+
+
+/* Stats */
+
+
+.stats {
+    padding-top:100px;
+}
+
 /* Utilities */
 .container {
     max-width: 1100px;
